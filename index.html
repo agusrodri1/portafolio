@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="nombre-con-foto">
+    <div class="menu-wrapper">
+      <ul class="menu">
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#estudios">Estudios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <h1 class="nombre">Agustín Rodríguez</h1>
+    <div class="imagen-wrapper">
+      <img src="FotoPortafolio.JPG" class="mi-foto" alt="Foto de Agustín Rodríguez"/>
+      <div class="boton-cv">
+        <a href="CV-Agustin-Rodriguez.pdf" download class="descargar-cv">
+          <i class="fas fa-download"></i> Descargar CV
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  <section class="sobre-mi" id="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <p>Soy Agustín Rodríguez, estudiante de Ingeniería en Informática en la Universidad del Salvador, con un fuerte interés en la ciberseguridad y el desarrollo web. Me apasiona entender cómo funcionan las cosas por dentro y cómo protegerlas, lo que me llevó a descubrir el mundo de la ciberseguridad y quedar completamente enganchado.</p>
+    <p>También disfruto tanto del desarrollo frontend como del backend: por un lado, me encanta la parte visual y creativa de las páginas, y por otro, me motiva la lógica y la estructura detrás de cada aplicación.</p>
+    <p>Mi objetivo es convertirme en un desarrollador lo más completo posible. Me considero curioso, autodidacta y con muchas ganas de crecer profesionalmente.</p>
+    <p>Actualmente programo en Python, JavaScript y Java, y sigo aprendiendo nuevas herramientas cada día. También sueño con crear mis propios videojuegos algún día, como proyecto personal. Estoy buscando una oportunidad para empezar a trabajar en el mundo IT, aportar valor desde el primer día y seguir formándome en un entorno real.</p>
+  </section>
+
+  <h1 class="habilidades">Mis Habilidades</h1>
+  <div class="contenedor">
+    <div class="card scroll-reveal">
+      <h2>Hard Skills</h2>
+      <div class="skills-logos">
+        <i class="fab fa-linux" title="Linux"></i>
+        <i class="fab fa-python" title="Python"></i>
+        <i class="fab fa-js" title="JavaScript"></i>
+        <i class="fab fa-java" title="Java"></i>
+        <i class="fab fa-github" title="GitHub"></i>
+        <i class="fas fa-terminal" title="CLI/Bash"></i>
+        <i class="fab fa-html5" title="HTML"></i>
+        <i class="fab fa-css3-alt" title="CSS"></i>
+      </div>
+    </div>
+    <div class="card scroll-reveal">
+      <h2>Soft Skills</h2>
+      <ul class="blandas">
+        <li>Comunicación efectiva</li>
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+        <li>Adaptabilidad</li>
+        <li>Organización</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="proyectos" id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="tarjetas-proyectos">
+      <!-- Agregá tus tarjetas de proyectos acá -->
+      <div class="tarjeta-proyecto">
+        <h3>Aún no tengo proyectos subidos!</h3>
+        <p>Descripción de algun proyecto futuro.</p>
+        <a href="#" class="btn">Ver en GitHub</a>
+      </div>
+      <div class="tarjeta-proyecto">
+        <h3>Proyecto futuro</h3>
+        <p>Descripcióm de algun proyecto futuro</p>
+        <a href="#" class="btn">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="estudios scroll-reveal" id="estudios">
+    <h2>Estudios</h2>
+    <ul>
+      <li>Ingeniería en Informática - Universidad del Salvador (En curso)</li>
+      <li>Bachiller Bilingüe, Ciencias Sociales - Colegio del Pilar</li>
+      <li>Language Course, Intercambio de 1 mes - University of Oxford</li>
+    </ul>
+  </section>
+
+  <section class="estudios scroll-reveal" id="cursos">
+    <h2>Cursos</h2>
+    <ul>
+      <li>Python for Everybody – Coursera</li>
+      <li>Introduccion a la ciberseguridad – Coursera</li>
+      <li>Curso de JavaScript – Codecademy</li>
+      <li>Curso de HTML y CSS – Codecademy</li>
+      <li>Curso de Java - Codecademy</li>
+    </ul>
+  </section>
+
+
+
+  <section id="contacto" class="contacto">
+    <h3>Contacto</h3>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/agustin-rodriguez-363037303/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/agusrodri1" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="mailto:agusrodriguez0602@gmail.com"><i class="fas fa-envelope"></i> agusrodriguez0602@gmail.com</a></li>
+      <li><i class="fas fa-phone"></i> +54 9 11 3401-7471</li>
+    </ul>
+  </section>
+
+  <!-- Footer (opcional) -->
+  <footer>
+    <p>© 2025 Agustín Rodríguez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="scrollReveal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+/* -------------- GLOBAL -------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+  }
+  
+  /* -------------- HEADER: Nombre + Menú -------------- */
+  .nombre-con-foto {
+    text-align: center;
+    background: linear-gradient(to right, #0c229b, #7155ee);
+    padding: 2rem 1rem;
+    color: white;
+    position: relative;
+  }
+  
+  .nombre {
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .imagen-wrapper {
+    margin-top: 1rem;
+  }
+  
+  .mi-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+  }
+  
+  /* -------------- MENÚ -------------- */
+  .menu-wrapper {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+  
+  .menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+  }
+  
+  
+  /* -------------- SECCIONES -------------- */
+  section {
+    padding: 2rem 10%;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sobre-mi h2,
+  .habilidades h1,
+  .contacto h3 {
+    margin-bottom: 1rem;
+    color: #0077cc;
+  }
+  
+  .sobre-mi p {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  /* -------------- HABILIDADES -------------- */
+  .habilidades {
+    text-align: center;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* se levanta 10px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* sombrita más marcada */
+  }
+  
+  .skills-logos {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .skills-logos i {
+    transition: transform 0.2s ease;
+  }
+  
+  .skills-logos i:hover {
+    transform: scale(1.2);
+    color: #0077cc;
+  }
+  
+  .blandas {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  /* -------------- CONTACTO -------------- */
+  .contacto ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .contacto ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contacto a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .contacto a:hover {
+    color: #0077cc;
+  }
+  
+  /* -------------- FOOTER -------------- */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #eaeaea;
+    color: #777;
+  }
+  
+  /* -------------- RESPONSIVE -------------- */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .contenedor {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    section {
+      padding: 1.5rem;
+    }
+  
+    .nombre {
+      font-size: 2.2rem;
+    }
+  
+    .mi-foto {
+      width: 120px;
+      height: 120px;
+    }
+  }
+/* Sección Proyectos */
+.proyectos {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Contenedor flexible */
+.proyectos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjeta individual */
+.proyecto-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.proyecto-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Título y descripción */
+.proyecto-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.proyecto-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Enlace al proyecto */
+.proyecto-card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.proyecto-card a:hover {
+  text-decoration: underline;
+}
+.boton-cv {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.descargar-cv {
+  display: inline-block;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.descargar-cv:hover {
+  background-color: #a10000;
+  transform: scale(1.05);
+}
+.estudios {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.estudios h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.estudios ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.estudios li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.estudios li::before {
+  content: "🎓";
+  position: absolute;
+  left: 0;
+}
+
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
