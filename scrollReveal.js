@@ -1,4 +1,3 @@
-// scrollReveal.js
 document.addEventListener("DOMContentLoaded", () => {
     const revealElements = document.querySelectorAll('.scroll-reveal');
   
@@ -6,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // solo se activa una vez
+          observer.unobserve(entry.target); 
         }
       });
     }, {
